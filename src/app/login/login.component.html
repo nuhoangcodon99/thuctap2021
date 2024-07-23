@@ -1,0 +1,35 @@
+<!-- Default form login -->
+
+<form class="text-center border border-light p-5 container bg-light shadow-lg rounded-3" style="max-width: 480px; margin-top: 72px;">
+
+    <p class="h4 mb-4">Đăng nhập</p>
+
+    <!-- Email -->
+    <input type="account" id="account" class="form-control mb-4" placeholder="Tài khoản">
+
+    <!-- Password -->
+    <input type="password" id="password" class="form-control mb-4" placeholder="Mật khẩu">
+
+    <div class="d-flex justify-content-around">
+        <div style="display: none;">
+            <!-- Remember me -->
+            <input id="ghinho" type="checkbox" checked> Ghi nhớ
+        </div>
+        <div>
+            <!-- Forgot password -->
+            <a href="">Quên mật khẩu?</a>
+        </div>
+    </div>
+
+    <!-- Sign in button -->
+    <br>
+    <button color="info" block="true" class="btn btn-primary" type="button" (click)="login()">Đăng nhập</button>
+
+    <!-- Register -->
+    <br><br>
+    <p>Chưa có tài khoản?
+        <a href="/register">Đăng ký</a>
+    </p>
+
+</form>
+<!-- Default form login -->

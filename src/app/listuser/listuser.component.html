@@ -1,0 +1,20 @@
+<div class="container shadow p-2 bg-light" style="margin: 3rem auto">
+    
+    <div class="menu bg-light p-1">
+        <h1 style="display: inline;">
+            Danh sách thành viên
+        </h1>
+        <span style="float: right;">
+            <button mat-button (click)="addMember()">Thêm Thành Viên</button>
+        </span>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="main">
+        <mat-grid-list cols="3" rowHeight="2:1">
+            <mat-grid-tile *ngFor="let mem of list">
+                <member [parent]=this acc="{{mem.acc}}" ngaysinh="{{mem.ngaysinh}}" donvi="{{mem.donvi}}" displayname="{{mem.displayname}}"></member>
+            </mat-grid-tile>
+        </mat-grid-list>
+        
+    </div>
+</div>
